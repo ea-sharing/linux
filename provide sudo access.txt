@@ -1,0 +1,14 @@
+Provide sudo access to user james on all app servers.
+Make sure you have set up password-less sudo for the user.
+
+ 
+
+id username
+sudo cat /etc/sudoers |grep username
+visudo
+su username
+[username@server root]$ sudo -i
+[root@server ~]# exit
+logout
+[james@stapp01 root]$ sudo cat /etc/sudoers | grep username
+username  ALL=(ALL)   NOPASSWD:ALL
