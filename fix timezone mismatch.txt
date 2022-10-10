@@ -1,0 +1,8 @@
+Fix Timezone mismatch
+
+Make sure to have same country timezone(Australia/Adelaide) in all servers.
+
+sudo ln -sf /usr/share/zoneinfo/Australia/Adelaide /etc/localtime
+
+Check: 
+timedatectl
