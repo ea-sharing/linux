@@ -1,0 +1,9 @@
+Data needs to be altered in several of the files. 
+
+
+a. Delete all lines containing word following and save results in newfile_deleted. (Please be aware of case sensitivity)
+b. Replace all occurrence of word life to newlife and save results in newfile_changed.
+Note: Let's say you are asked to replace word to with from. In that case, make sure not to alter any words containing this string; for example upto, contributor etc.
+
+sed '/\<following\>/d' file > newfile_deleted
+sed 's/\bfrom\b/for/g' file > newfile_changed
