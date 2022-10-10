@@ -1,0 +1,7 @@
+Task: Create a user with a non-interactive shell.
+
+For example, let us to create a user named john with a non-interactive shell on any linux server(Centos)
+
+1. adduser john -s /sbin/nologin
+2. id john 
+3. cat /etc/passwd | grep john 
