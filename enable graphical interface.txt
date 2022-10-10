@@ -1,0 +1,7 @@
+On the server change the default runlevel so that it can boot in GUI (graphical user interface) by default without rebooting.
+
+systemctl get-default
+systemctl set-default graphical.target
+systemctl start graphical.target
+systemctl status graphical.target
+systemctl get-default
